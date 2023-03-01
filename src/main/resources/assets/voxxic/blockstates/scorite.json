@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "soaked=false": {
+      "model": "voxxic:block/scorite"
+    },
+    "soaked=true": {
+      "model": "voxxic:block/scorite_soaked"
+    }
+  }
+}
