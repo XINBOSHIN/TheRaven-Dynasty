@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "$i$",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "$": { "item": "minecraft:smooth_stone_slab" },
+    "i": { "item": "minecraft:iron_ingot" },
+    "#": { "item": "minecraft:bricks" }
+  },
+  "result": {
+    "item": "voxxic:burner"
+  }
+}
