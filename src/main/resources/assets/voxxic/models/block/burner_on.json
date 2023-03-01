@@ -1,9 +1,0 @@
-{
-	"parent": "minecraft:block/orientable_with_bottom",
-	"textures": {
-		"top": "voxxic:block/burner_top_on",
-		"front": "voxxic:block/burner_front_on",
-		"side": "voxxic:block/burner_side",
-		"bottom": "voxxic:block/burner_bottom"
-	}
-}

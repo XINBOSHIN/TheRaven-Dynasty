@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ravendynasty",
+  "name": "Raven Dynasty",
+  "description": "Magic mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Mortobello"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
