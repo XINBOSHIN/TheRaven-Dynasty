@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:block/orientable_with_bottom",
+	"textures": {
+		"top": "voxxic:block/arcane_workbench_top",
+		"front": "voxxic:block/arcane_workbench_front",
+		"side": "voxxic:block/arcane_workbench_side",
+		"bottom": "voxxic:block/arcane_workbench_bottom"
+	}
+}
