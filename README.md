@@ -7,7 +7,7 @@ Raven Dynasty лицензирован в соответствии с [Лице�
 
 ## Информация о Maven
 
-Артефакты Maven находятся [здесь](https://maven.blamejared.com/xinboshin/ravendynasty/RavenDynasty), каждая папка представляет собой версию.
+Артефакты Maven находятся [здесь](https://maven.blamejared.com/xinboshin/theraven-dynasty/RavenDynasty), каждая папка представляет собой версию.
 
 Примечание: Начиная с 1.16, промежуточные (не выпускаемые) сборки Maven больше не сохраняются.
 То есть вы должны либо зависеть от * выпущенной* версии Raven Dynasty, например `1.16.2-407`, либо специально выбрать передовую
@@ -23,7 +23,7 @@ repositories {
 
 dependencies {
     // 1.14+
-    compileOnly fg.deobf("xinboshin.ravendynasty:RavenDynasty:[VERSION]:api")
+    compileOnly fg.deobf("xinboshin.theravendynasty:RavenDynasty:[VERSION]:api")
     runtimeOnly fg.deobf("xinboshin.ravendynasty:RavenDynasty:[VERSION]")
 }
 ```
