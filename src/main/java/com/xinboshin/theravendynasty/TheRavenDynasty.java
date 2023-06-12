@@ -65,7 +65,7 @@ public class TheRavenDynasty {
         @Override
         @SideOnly(Side.CLIENT)
         public ItemStack createIcon() {
-            return new ItemStack(Items.DIAMOND);
+            return new ItemStack(Items.DIAMOND_AXE);
         }
     };
 }
