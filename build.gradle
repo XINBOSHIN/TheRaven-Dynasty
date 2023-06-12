@@ -55,8 +55,9 @@ processResources {
 		'mod_icon': mod_icon
     }
 
+// copy everything else, thats not the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
-        exclude 'mcmod.info'
+        include 'mcmod.info'
     }
 }
 
