@@ -1,10 +1,12 @@
 package com.xinboshin.theravendynasty.handlers;
 
-import com.xinboshin.theravendynasty.XinboshinCore;
+import com.xinboshin.theravendynasty.TheRavenDynasty;
 import com.xinboshin.theravendynasty.network.packets.Packet;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
@@ -27,7 +29,7 @@ public class GenericEventHandler {
             this.messageCountdown--;
 
             if (this.messageCountdown == 0) {
-                XinboshinCore.packetHandler.sendTo(new Packet(), (EntityPlayerMP)event.player);
+                TheRavenDynasty.packetHandler.sendTo(new Packet(), (EntityPlayerMP)event.player);
             }
         }
     }
