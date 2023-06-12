@@ -1,17 +1,14 @@
-[
-  {
-    "modid": "theravendynasty",
-    "name": "The Raven Dynasty",
-    "description": "The Raven Dynasty is a mod that adds nature magic to Minecraft",
-    "version": "${version}",
-    "mcversion": "${mcversion}",
-    "logoFile": "assets/theravendynasty/textures/logo.png",
-    "url": "http://www.xinboshin.org",
-    "updateUrl": "",
-    "authorList": ["Vazkii", "williewillus", "wiiv", "dylan4ever"],
-    "credits": "Azanor",
-    "parent": "",
-    "screenshots": [],
-    "dependencies": []
-  }
-]
+[{
+  "modid": "${mod_id}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "version": "${mod_version}",
+  "mcversion": "${mc_version}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["${mod_author}"],
+  "credits": "",
+  "logoFile": "${mod_icon}",
+  "screenshots": [],
+  "dependencies": []
+}]
