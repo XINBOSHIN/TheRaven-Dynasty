@@ -1,8 +1,6 @@
-package com.integral.examplemod.handlers;
+package com.xinboshin.theravendynasty.handlers;
 
 import baubles.api.BaublesApi;
-import baubles.api.IBauble;
-import baubles.api.cap.BaublesCapabilities;
 import baubles.api.cap.IBaublesItemHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;

@@ -1,7 +1,4 @@
-package com.integral.examplemod.proxy;
-
-import java.util.HashMap;
-import java.util.UUID;
+package com.xinboshin.theravendynasty.proxy;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;

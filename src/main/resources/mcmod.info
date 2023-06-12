@@ -6,7 +6,7 @@
   "mcversion": "${mc_version}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["${mod_author}"],
+  "authorList": ["Xinboshin"],
   "credits": "",
   "logoFile": "${mod_icon}",
   "screenshots": [],

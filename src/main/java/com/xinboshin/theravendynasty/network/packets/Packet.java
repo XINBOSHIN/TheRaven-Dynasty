@@ -1,4 +1,4 @@
-package com.integral.examplemod.network.packets;
+package com.xinboshin.theravendynasty.network.packets;
 
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayer;
@@ -10,9 +10,9 @@ import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ExamplePacket implements IMessage {
+public class Packet implements IMessage {
 
-    public ExamplePacket() {
+    public Packet() {
         // NO-OP
     }
 
@@ -26,15 +26,15 @@ public class ExamplePacket implements IMessage {
         // NO-OP
     }
 
-    public static class Handler implements IMessageHandler<ExamplePacket, IMessage> {
+    public static class Handler implements IMessageHandler<Packet, IMessage> {
 
         @Override
         @SideOnly(Side.CLIENT)
-        public IMessage onMessage(ExamplePacket message, MessageContext ctx) {
+        public IMessage onMessage(Packet message, MessageContext ctx) {
             EntityPlayer player = FMLClientHandler.instance().getClientPlayerEntity();
 
             if (player != null) {
-                player.sendStatusMessage(new TextComponentString("Received example packet from server!"), false);
+                player.sendStatusMessage(new TextComponentString("[The Raven Dynasty] Первоначальные зависимости успешно установлены!"), false);
             }
 
             return null;

@@ -1,9 +1,7 @@
-package com.integral.examplemod.handlers;
+package com.xinboshin.theravendynasty.handlers;
 
-import java.util.Random;
-
-import com.integral.examplemod.ExampleMod;
-import com.integral.examplemod.network.packets.ExamplePacket;
+import com.xinboshin.theravendynasty.TheRavenDynasty;
+import com.xinboshin.theravendynasty.network.packets.Packet;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
@@ -31,7 +29,7 @@ public class GenericEventHandler {
             this.messageCountdown--;
 
             if (this.messageCountdown == 0) {
-                ExampleMod.packetHandler.sendTo(new ExamplePacket(), (EntityPlayerMP)event.player);
+                TheRavenDynasty.packetHandler.sendTo(new Packet(), (EntityPlayerMP)event.player);
             }
         }
     }

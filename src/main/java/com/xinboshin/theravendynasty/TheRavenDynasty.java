@@ -1,4 +1,4 @@
-package com.integral.examplemod;
+package com.xinboshin.theravendynasty;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -18,28 +18,26 @@ import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-import java.io.File;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.integral.examplemod.handlers.ExampleConfig;
-import com.integral.examplemod.handlers.GenericEventHandler;
-import com.integral.examplemod.network.packets.ExamplePacket;
-import com.integral.examplemod.proxy.CommonProxy;
+import com.xinboshin.theravendynasty.handlers.Config;
+import com.xinboshin.theravendynasty.handlers.GenericEventHandler;
+import com.xinboshin.theravendynasty.network.packets.Packet;
+import com.xinboshin.theravendynasty.proxy.CommonProxy;
 
-@Mod(modid = ExampleMod.MODID, version = ExampleMod.VERSION, name = ExampleMod.NAME)
-public class ExampleMod {
-    public static final String MODID = "examplemod";
-    public static final String NAME = "The Example Mod";
+@Mod(modid = TheRavenDynasty.MODID, version = TheRavenDynasty.VERSION, name = TheRavenDynasty.NAME)
+public class TheRavenDynasty {
+    public static final String MODID = "theravendynaty";
+    public static final String NAME = "The Raven Dynasty";
     public static final String VERSION = "1.0.0";
 
     public static SimpleNetworkWrapper packetHandler;
 
-    @SidedProxy(clientSide = "com.integral.examplemod.proxy.ClientProxy", serverSide = "com.integral.examplemod.proxy.CommonProxy")
+    @SidedProxy(clientSide = "com.xinboshin.theravendynasty.proxy.ClientProxy", serverSide = "com.xinboshin.theravendynasty.proxy.CommonProxy")
     public static CommonProxy proxy;
 
-    public static final Logger logger = LogManager.getLogger("ExampleMod");
+    public static final Logger logger = LogManager.getLogger("TheRavenDynasty");
     public static final int howCoolAmI = Integer.MAX_VALUE;
 
     @EventHandler
@@ -54,16 +52,16 @@ public class ExampleMod {
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        ExampleConfig.load(event);
+        Config.load(event);
 
-        packetHandler = NetworkRegistry.INSTANCE.newSimpleChannel("ExampleModChannel");
-        packetHandler.registerMessage(ExamplePacket.Handler.class, ExamplePacket.class, 1, Side.CLIENT);
+        packetHandler = NetworkRegistry.INSTANCE.newSimpleChannel("TheRavenDynastyChannel");
+        packetHandler.registerMessage(Packet.Handler.class, Packet.class, 1, Side.CLIENT);
 
         MinecraftForge.EVENT_BUS.register(new GenericEventHandler());
         NetworkRegistry.INSTANCE.registerGuiHandler(this, proxy);
     }
 
-    public static CreativeTabs tabExampleMod = new CreativeTabs("tabExampleMod") {
+    public static CreativeTabs tabExampleMod = new CreativeTabs("tabTheRavenDynasty") {
         @Override
         @SideOnly(Side.CLIENT)
         public ItemStack createIcon() {
