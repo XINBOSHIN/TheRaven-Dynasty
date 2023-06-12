@@ -1,4 +1,10 @@
 package com.xinboshin.theravendynasty.item;
 
-public class BookOfDarkness {
+import net.minecraft.item.Item;
+
+public class BookOfDarkness extends Item {
+    public BookOfDarkness() {
+        this.setRegistryName("bookofthedarkness");
+        this.setUnlocalizedName("bookofthedarkness");
+    }
 }
