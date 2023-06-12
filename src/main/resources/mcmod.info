@@ -4,11 +4,11 @@
   "description": "${mod_description}",
   "version": "${mod_version}",
   "mcversion": "${mc_version}",
-  "url": "",
+  "url": "xinboshin.org/mods",
   "updateUrl": "",
   "authorList": ["Xinboshin"],
   "credits": "",
-  "logoFile": "${mod_icon}",
+  "logoFile": "",
   "screenshots": [],
   "dependencies": []
 }]
