@@ -30,7 +30,7 @@ import com.xinboshin.theravendynasty.proxy.CommonProxy;
 public class TheRavenDynasty {
     public static final String MODID = "theravendynaty";
     public static final String NAME = "The Raven Dynasty";
-    public static final String VERSION = "1.0.0";
+    public static final String VERSION = "1.0.3";
 
     public static SimpleNetworkWrapper packetHandler;
 
