@@ -1,7 +1,7 @@
 package com.xinboshin.theravendynasty.item;
 
 
-@ObjectHolder("theravendynasty")
+@ObjectHolder("theravendynasty") //неверная аннотация
 @Mod.EventBusSubscriber// Автоматическая регистрация статичных обработчиков событий
 public class ItemsRegistry {
     @ObjectHolder("bookofdarkness")
