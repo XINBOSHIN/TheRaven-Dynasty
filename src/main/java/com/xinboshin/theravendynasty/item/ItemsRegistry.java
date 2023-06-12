@@ -17,6 +17,6 @@ public class ItemsRegistry {
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
     public static void onRegistryModel(ModelRegistryEvent e) {
-        // См. следующую часть данной главы
+
     }
 }
