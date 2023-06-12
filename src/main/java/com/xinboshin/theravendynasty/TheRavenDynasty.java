@@ -61,11 +61,11 @@ public class TheRavenDynasty {
         NetworkRegistry.INSTANCE.registerGuiHandler(this, proxy);
     }
 
-    public static CreativeTabs tabExampleMod = new CreativeTabs("tabTheRavenDynasty") {
+    public static CreativeTabs tabTheRavenDynasty = new CreativeTabs("tabTheRavenDynasty") {
         @Override
         @SideOnly(Side.CLIENT)
         public ItemStack createIcon() {
-            return new ItemStack(Items.BAKED_POTATO);
+            return new ItemStack(Items.DIAMOND);
         }
     };
 }
