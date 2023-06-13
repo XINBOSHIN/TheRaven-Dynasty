@@ -21,3 +21,7 @@ public class BlockMirror extends Blocks {
         return false;
     }
 }
+
+
+
+//блок отражения/зеркала, используется для заклинаний всевидящего ока
