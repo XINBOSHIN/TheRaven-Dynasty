@@ -82,3 +82,5 @@ artifacts {
 	archives devJar
 	archives sourcesJar
 }
+
+
