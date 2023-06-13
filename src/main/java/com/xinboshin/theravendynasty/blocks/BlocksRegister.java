@@ -26,3 +26,5 @@ public class BlocksRegister {
 }
 
 
+
+//регистрация блоков и остальных классов
