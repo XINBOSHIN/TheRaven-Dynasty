@@ -34,6 +34,7 @@ Raven Dynasty использует миксины для реализации р
 Это может вызвать проблемы при зависимости от Raven Dynasty in-dev, поскольку ForgeGradle / MixinGradle еще должным
 образом не поддерживают это in-dev, как это делает Fabric.
 В качестве обходного пути отключите refmaps, определив `mixin.env.disableRefMap`
+
 Аргумент JVM равен `true`.
 
 
